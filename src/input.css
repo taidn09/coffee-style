@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,500;1,600;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.ct-menu-expanded{
+    @apply absolute top-20 z-20 left-0 right-0 bg-white animate-slidedown;
+}
+.ct-menu-item{
+    @apply py-4 hover:text-black relative before:lg:content-[''] before:lg:absolute before:lg:w-0 before:lg:h-0.5 before:lg:bottom-0 before:lg:left-0 before:lg:ease-in-out before:lg:duration-300 before:lg:transition-all before:lg:bg-light-coffee hover:before:lg:w-full;
+}
+.ct-badge-circle{
+    @apply text-xs flex justify-center items-center rounded-full px-1 mx-1;
+}
+.ct-hover-btn{
+    @apply uppercase bg-white text-black py-[18px] px-6 transition-all duration-300 hover:bg-gray-200
+}
+.ct-wrapper-header-line{
+    @apply flex justify-center items-center mb-24
+}
+.ct-header-line-deco{
+    @apply w-8 h-px bg-gray-400
+}
+.ct-header-line-label{
+    @apply uppercase font-bold text-xs px-2 text-gray-400 tracking-widest
+}
